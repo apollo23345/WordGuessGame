@@ -9,17 +9,24 @@
 <body>
 
   <div class="game-card">
-    <h1>Word Guessing Game</h1>
+    <div class="header-bar">
+      <h1>Word Guessing Game</h1>
+      <button id="sound-toggle-btn" class="icon-btn">🔊 Sound On</button>
+    </div>
 
+    <!-- Word Display -->
     <div id="word-display" class="word-display">_ _ _</div>
 
+    <!-- Controls -->
     <div class="input-container">
       <input type="text" id="letter-input" maxlength="1" placeholder="Letter" autofocus>
       <button id="guess-btn">Guess</button>
     </div>
 
+    <!-- Message Output -->
     <p id="message" class="message">Enter a letter to start!</p>
 
+    <!-- Game Stats -->
     <div class="stats-container">
       <div class="stat-box">
         <span class="stat-label">Reward Points</span>
@@ -31,6 +38,7 @@
       </div>
     </div>
 
+    <!-- Guessed Letters List -->
     <div class="guessed-letters">
       <strong>Wrong Guesses:</strong> <span id="wrong-letters">None</span>
     </div>
